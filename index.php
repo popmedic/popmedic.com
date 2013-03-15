@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta name="viewport" content="width=240,user-scalable=no" />
-<title>The PoPMediC</title>
+<title>PoPMediC Labs</title>
 <style>
 body{
 	font-family:Helvetica;
