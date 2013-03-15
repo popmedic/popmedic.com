@@ -65,77 +65,36 @@ a:hover{
 .banner .txt{
 	padding-left:64px;
 }
-.deadpool-background{
-	background-image:url(images/deadpool-strip1.jpg);
-	background-size:100% 100%;
+
+.monks-background{
+	background-image:url(images/monks-and-penny.png);
+	background-size:720px;
 	background-repeat:no-repeat;
-	width:720px;
-	height:340px;
-	margin:30px;
-	padding-left:4px;
-	padding-top:4px;
-	background-color:rgba(255, 255, 255, 0.95);
-	color:rgba(0, 0, 0, 0.80);
+	height:720px;
+	padding-left:410px;
+	background-color:rgba(255, 255, 255, 0.75);
+	color:rgba(64, 64, 64, 0.75);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
-.deadpool-background .caption{
-	position:relative;
-	width:128px;
-	background-color:rgba(255, 255, 255, 0.60);
-	padding-bottom:4px;
-}
-.deadpool-background .h3{
+.monks-background .h3{
 	font-size:16pt;
 	font-weight:bold;
+	background-color:rgba(255, 255, 255, 0.75);
+	color:rgba(64, 64, 64, 0.75);
 }
-.deadpool-background a{
+.monks-background a{
+	background-color:rgba(255, 255, 255, 0.75);
+	color:rgba(64, 64, 64, 0.75);
 	font-size:12pt;
 	font-weight:normal;
-	color:rgba(0, 0, 0, 0.90);
-	background-color:inherit;
 }
-.deadpool-background a:hover{
-	color:rgba(255,255,255,0.75);
-	background-color:inherit;
-}
-.menu{
-	display:inline-table;
-	margin-top:0px;
-	margin-bottom:0px;
-	padding-bottom:0px;
-	padding-top:0px;
-}
-.menu .item{
-	border:rgba(128,128,128,1.0) thin solid;
-	border-radius:4px;
-	display:inline;
-	width:256px;
-	margin-left:8px;
-	margin-top:0px;
-	margin-right:8px;
-	margin-bottom:0px;
-	padding-left:8px;
-	padding-top:2px;
-	padding-right:8px;
-	padding-bottom:2px;
-	cursor:pointer;
-}
-.menu .item:hover{
-	color:rgba(255,255,255,1.0);
-	background-color:rgba(204,204,204,1);
-}
-.content{
-	text-align:left;
-	margin-left:30px;
-	margin-right:30px;	
+.monks-background a:hover{
+	color:rgba(0,0,0,0.25);
 }
 </style>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-<script>
-$(document).ready(function(e) {
-    $(".content").load("./news.html");
-	$(".menu .item").click(function(){$(".content").load($(this).attr("href"));});
-});
-</script>
 </head>
 
 <body>
@@ -146,13 +105,17 @@ $(document).ready(function(e) {
 					<img src="<?php print "http://www.gravatar.com/avatar/" . md5("popmedic@gmail.com") . "?d=" . urlencode("http://popmedic.com") . "&s=128"; ?>" />
 				</td>
 				<td>
-					<h1 class="txt">P&nbsp;&nbsp;O&nbsp;&nbsp;P&nbsp;&nbsp;M&nbsp;&nbsp;E&nbsp;&nbsp;D&nbsp;&nbsp;I&nbsp;&nbsp;C&nbsp;&nbsp;&nbsp;&nbsp;Labs</h1>
+					<h1 class="txt">t h e&nbsp;&nbsp;&nbsp;&nbsp;P&nbsp;&nbsp;O&nbsp;&nbsp;P&nbsp;&nbsp;M&nbsp;&nbsp;E&nbsp;&nbsp;D&nbsp;&nbsp;I&nbsp;&nbsp;C</h1>
 				</td>
 			</tr>
 		</table>
 	</div>
 	<div class="center">
-		<div class="deadpool-background" style="text-align:left;">
+		<hr />
+		<h2 class="center">
+			You still carrying him on your back???
+		</h2>
+		<div class="monks-background" style="text-align:left;">
         	<div class="caption">
 			<span class="h3">
 				About:
@@ -172,31 +135,35 @@ $(document).ready(function(e) {
 				</li>
 			</ul>
             </div>
+			<span class="h3">
+				Projects:
+			</span>
+			<ul>
+				<li>
+					<a href="https://github.com/popmedic/mp4autotag#mp4autotag" target="_blank">Mp4Autotag</a>
+				</li>
+				<li>
+					<a href="http://popmedic.com/cgi/mp4autotag_cgi.rb" target="_blank">Mp4Autotag Server CGI</a>
+				</li>
+				<li>
+					<a href="http://popmedic.com/popmsplit" target="_blank">PopMSplit</a>
+				</li>
+			</ul>
+			<span class="h3">
+				Sites:
+			</span>
+			<ul>
+				<li>
+					<a href="http://www.shanysmpg.com" target="_blank">Shany's Mobile Pet Grooming</a>
+				</li>
+				<li>
+					<a href="http://www.straightlinepainting.us" target="_blank">Straight Line Painting</a>
+				</li>
+			</ul>
         </div>
-        <div class="menu">
-        	<div class="item" href="./news.html">
-            	News
-            </div>
-            <div class="item" href="./products.html">
-            	Products
-            </div>
-            <div class="item" href="./guides.html">
-            	Guides
-            </div>
-            <div class="item" href="./artwork.html">
-            	Artwork
-            </div>
-            <div class="item" href="./toolkit.html">
-            	Toolkit
-            </div>
-            <div class="item" href="./rants.html">
-            	Rants
-            </div>
-        </div>
-        <div class="content">
-   	  		
-		</div>
-        <hr />
+		<h2>
+			Dang it penny! Get outta there!
+		</h2>
 		<p>
 			<span class="center tiny-text dotted-box">
 				created by <a href="http://popmedic.com" alt="Infinite Loop.">The Popmedic</a>
