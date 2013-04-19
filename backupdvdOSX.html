@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>OSX 10.7.0 - Back Up a DVD to mp4</title>
+<style>
+body{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+}
+a{
+	text-decoration:none;
+	color:#660;
+}
+a:hover{
+	color:#630
+}
+a:visited{
+	color:#690;
+}
+.figure{
+	text-align:center;
+	vertical-align:top;
+	font-size:12px;
+}
+.toc-tag{
+	font-size:12px;
+	text-decoration:overline underline;
+	font-variant:small-caps;
+	text-align:right;
+	margin-left:10px;
+}
+</style>
+</head>
+<body>
+<div id="title-div">
+<h1>OSX 10.7.0 - Back Up a DVD to mp4</h1>
+</div>
+<div id="objective-div">
+<h2>Objective</h2>
+<blockquote>
+This tutorial is intended to show a basic MAC user how to back-up their movie and TV show DVDs into the most portable Mp4s possible with meta-data.  The end result will be your movies and TV shows in iTunes looking like you bought them from the iTunes store.
+</blockquote>
+</div>
+<div id="toc-div">
+<h2>Table of Contents</h2>
+<ol>
+<li><a href="#intro-div">Introduction</a></li>
+<li><a href="#tools-div">Tools</a></li>
+<li><a href="#movie-or-tv-show-div">Movie or TV Show</a></li>
+<li><a href="#movie-back-up-div">Movie Back-up</a><ul>
+<li><a href="#movie-why-so-long-div">What is Mp4DVD doing that takes so long?</a></li></ul></li>
+<li><a href="#tv-show-back-up-div">TV Series Back-up</a><ul>
+<li><a href="#tv-show-multi-files-div">TV Series Back-up: Multiple Files</a></li>
+<li><a href="#tv-show-one-file-div">TV Series Back-up: One Large File</a></li></ul></li>
+</ol>
+</div>
+<div id="intro-div">
+<h2>Introduction <a href="#toc-div" class="toc-tag">toc^</a></h2>
+<blockquote>
+So, I have to admit... I have a problem... I have spent a small fortune on DVDs of TV Series and Movies that I like, but the world is moving to the cloud.  I have an iPhone, an iPad, an AppleTV, and a Mac Mini Server, and I want all my TV Series and Movies in my iTunes so I can watch them on any of my devices served up though the Mac Mini by iTunes.  Getting iTunes to work as the server is no problem, but how does one get the Movies and TV Series off the DVD and into iTunes?  Does one have to re-purchase the Movies and TV Series though iTunes to have descriptions, genres, cast, release date, and all that jazz?<br />
+<br />
+I started working on this and found that it was an obnoxious task, and that there were limited tools and tutorials for those living in the Mac world.  At one time we had Mac-The-Ripper and Visual-hub that could pull this off, but no descriptions, genres, cast, release date...  After stumbling around, and learning a lot, I built some tools to make this task easier for me, and would like to share how I back up Movie and TV Show DVDs into MP4s on my Mac OSX > 10.7.0.
+</blockquote>
+</div>
+<div id="tools-div">
+<h2>Tools<a href="#toc-div" class="toc-tag"> toc^</a></h2>
+<blockquote>
+Here is a list of the tools, and links to their documentation.
+<ul>
+<li>
+<a href="https://github.com/popmedic/mp4dvd#mp4dvd" target="_blank">Mp4DVD</a>
+</li>
+<li>
+<a href="https://github.com/popmedic/mp4split#mp4split" target="_blank">Mp4Split</a>
+</li>
+<li>
+<a href="https://github.com/popmedic/mp4autotag#mp4autotag" target="_blank">Mp4Autotag</a>
+</li>
+</ul>
+Follow the links, take a look at what these tools can do for you.  They are true Free-ware.  No ads, no annoying "Donate", F.R.E.E. free.  Don't believe me, check out the code, you can see for yourself, the code can be downloaded and you can compile any of these projects with your own modifications.
+</blockquote>
+</div>
+<div id="movie-or-tv-show-div">
+<h2>Movie or TV Show <a href="#toc-div" class="toc-tag">toc^</a></h2>
+<blockquote>
+So the first thing one has to decide is if they are backing up a movie or TV series.  Movies are easy, Mp4DVD makes quick work of them, and Mp4Autotag will find them easily.  TV Series are a little more difficult.  Sometimes, the DVD provider makes it easy for us, and puts each episode under its own title on the DVD.  Other times, they make it harder by storing all the episodes under one title, with chapters separating the episodes.  Either way is not to difficult with our new tools, so lets get started.
+</blockquote>
+</div>
+<div id="movie-back-up-div">
+<h2>Movie Back-up <a href="#toc-div" class="toc-tag">toc^</a></h2>
+<blockquote>
+Start up Mp4DVD, and drag and drop the DVD onto it.  I have chosen to back-up the movie Summer Wars.  So, when I put the disc in the DVD drive a DVD icon appears on my desktop labeled "Summer Wars".  I dragged that icon and dropped it on Mp4DVD (figure 1), which will bring me to a title selection table (figure 2).
+<p></p> 
+<div class="figure" id="figure1">Figure 1<img src="images/dvd2mp4-mp4dvd-blank.png" /></div>
+<div class="figure" id="figure2">Figure 2<img src="images/dvd2mp4-mp4dvd-titles.png" /></div>
+What we are looking at in Figure 2 are the different tracks on the DVD.  As one can tell the longest title has automatically been selected for us.  When backing up movies, the longest title is almost always the track you want, as it is in my case with Summer Wars.<p></p>
+Why would we need to adjust this track?  Well if you want the "Extras" on the DVD for example, they are probably one of the smaller tracks.  If you want the extras, I suggest opening the DVD in DVD Player and matching up the lengths with the "Extras" you want.
+<p></p>
+Place a check mark in the box next to all the titles you want to back-up.  When satisfied with the selections, click the "Rip" button.  I selected just the longest title (I just want the movie), and when I clicked "Rip", it brought me to Figure 3.<p></p>
+<div class="figure" id="figure3">Figure 3<img src="images/dvd2mp4-mp4dvd-saveas.png" /></div>
+This is a "Save As" dialog. Here one decides where they are going to save the Mp4 file.  So, browse to where you want to save the file, and name it.  Mp4DVD will take the name you type in the box and if you only have one title selected, use that name, if more then one title is select, then it will use that name as a prefix and append [X] where X is the index of the saved title.<p></p>
+The movie I am converting was nice to me, it named its disc "Summer Wars" the same as the movie title.  This is not always true, usually it is named more like "SUMR_WAR" or something like that.  When we go to add the meta-data with Mp4Autotag, it uses the file name to search for the meta-data on-line, so make sure you name the file the name of the movie.
+<p></p>
+Once you are satisfied on the name and place for the back-up, click the save button.  I am going to back Summer Wars up in my Movie folder with the name "Summer Wars", and when I hit "Save", it takes me to Figure 4.
+<p></p>
+<div class="figure" id="figure4">Figure 4<img src="images/dvd2mp4-mp4dvd-ripping.png" /></div>
+Now, go work out, get lunch, go to work, do something besides stare at the progress bars!  This part takes a while, but the result will be worth it. 
+<p></p>
+<div class="figure" id="figure5">Figure 5<img src="images/dvd2mp4-mp4dvd-encoding.png" /></div>
+<p></p>
+<div id="movie-why-so-long-div">
+<h3>What is Mp4DVD doing that takes so long?<a href="#toc-div" class="toc-tag">toc^</a></h3>
+Mp4DVD is decoding the selected titles off the DVD, that's what "Copying VOB files" means.  Mp4DVD uses the free-ware <a href="http://dvdnav.mplayerhq.hu/" target="_blank">libdvdread and libdvdnav (libdvdcss2)</a> to remove the <a href="http://en.wikipedia.org/wiki/Content_Scramble_System" target="_blank">Content Scramble System (CSS)</a> from the DVD <a href="http://en.wikipedia.org/wiki/VOB" target="_blank">VOB (Video Object) files</a> and copies the files in to a temporary file. Not only does the CSS have to be keyed and decoded, but the files have to be put back together as well.
+<p></p>
+Next Mp4DVD has to encode the temporary VOB file into a Mp4 file, that's what "Encoding to MP4 file" means.  Mp4DVD uses the free-ware application <a href="http://www.ffmpeg.org/" target="_blank">ffmpeg</a> to encode the VOB files to Mp4 files.  These VOB files are somewhere in the neighborhood of 6GB in size, and ffmpeg is compressing it down to a 1GB file.  That amount of compression so that you can watch a movie over an Internet connection is gonna take a little processor time.  
+</div>
+<p></p>
+Once Mp4DVD has finished doing all that, it is time to close Mp4DVD and open Mp4Autotag (Figure 6).
+<p></p>
+<div class="figure" id="figure6">Figure 6<img src="images/dvd2mp4-mp4autotag-blank.png" /></div>
+<p></p>
+Now click on the "Add" button <img src="images/dvd2mp4-mp4autotag-open-btn.png" /> which will bring you to Figure 7.
+<p></p>
+<div class="figure" id="figure7">Figure 7<img src="images/dvd2mp4-mp4autotag-openfile.png" /></div>
+<p></p>
+Select the file you just created with Mp4DVD.  In my case it is "Summer Wars.mp4".  Click the "Open" button.  This will add the file to the table and when you select the file, you can see and edit the current tags (Figure 8).  You could also add the file by drag and dropping it from Finder or iTunes.
+<p></p>
+<div class="figure" id="figure8">Figure 8<img src="images/dvd2mp4-mp4autotag-select.png" /></div>
+<p></p>
+Now make sure you have selected the file in the table, and click the "Autotag" button <img src="images/dvd2mp4-mp4autotag-autotag-btn.png" />
+<p></p>
+<div class="figure" id="figure9">Figure 9<img src="images/dvd2mp4-mp4autotag-tag.png" /></div>
+<p></p>
+After searching, you should get a window like I got (Figure 9) where you can choose a match for your movie.  If not you can do a custom search for your movie.  Once you find your movie, click the "Tag" button to automatically set all of the tags for the movies meta-data (Figure 10).
+<p></p>
+<div class="figure" id="figure10">Figure 10<img src="images/dvd2mp4-mp4autotag-movie-tagged.png" /></div>
+<p></p>
+Now, we are done with Mp4Autotag and we can close it down.  All that is left is to add your new movie to iTunes.  Adding movies to iTunes tutorials have been done to death, so you are on your own here, but check out how "Summer Wars" now looks in my iTunes (Figure 11).
+<p></p>
+<div class="figure" id="figure11">Figure 11<img src="images/dvd2mp4-itunes-summer-wars.png" width="75%" /></div>
+<p></p>
+</blockquote>
+</div>
+<div id="tv-show-back-up-div">
+<h3>TV Series Back-Up <a href="#toc-div" class="toc-tag">toc^</a></h3>
+<blockquote>
+TV Series Back-ups and movie back-ups are not much different.  We start the same, open Mp4DVD.  Drag and drop the DVD into Mp4DVD like we did for the movie DVD, only this time I have chosen 2 different DVDs from 2 different series: "Gungrave Disc 2'; and "Transformers Season 2 Disc 6".  I am using these two different series because they illustrate the two different ways manufactures store the data on the DVDs.  "Gungrave Disc 2" is stored as one title with chapters for the episodes, while "Transformers Season 2 Disc 6" has each episode stored as an individual title.  We will start by backing-up "Transformers Season 2 Disc 6" in <a href="#tv-show-multi-files-div">TV Series Back-up: Multiple Files</a>, and then back-up "Gungrave Disc 2" in <a href="#tv-show-one-file-div">TV Series Back-up: One Large File</a>.
+</blockquote>
+</div>
+<div id="tv-show-multi-files-div">
+<h3>TV Series Back-up: Multiple Files <a href="#toc-div" class="toc-tag">toc^</a></h3>
+<blockquote>
+Start up Mp4DVD, and drag and drop the DVD onto it.  I have chosen to back-up the TV Series "Transformers Season 2 Disc 6".  So, when I put the disc in the DVD drive a DVD icon appears on my desktop labeled "TRANSFORMERS_S2_D6".  I dragged that icon and dropped it on Mp4DVD (<a href="#figure1">figure 1</a>), which will bring me to a title selection table (figure 12).
+<p></p> 
+<div class="figure" id="figure12">Figure 12<img src="images/dvd2mp4-mp4dvd-transformers-titles.png" /></div>
+What we are looking at in Figure 12 are the different tracks on the DVD.  As one can tell the longest title has automatically been selected for us.  We probably want the longest track, but one can tell that the longest track is not the only track of that length.  One is exactly the same length.  The manufactures did something weird here: not only do they have every episode as an individual title; they have duplicates of every title.  This happens sometime.  I look at the lengths of the titles to decide which titles to choose, and sometimes, I just choose them all.  In the case of "Transformers Season 2 Disc 6", I picked one of every title with the same length (Figure 13) and it works.
+<p></p> 
+<div class="figure" id="figure13">Figure 13<img src="images/dvd2mp4-mp4dvd-transformers-titles-picked.png" /></div>
+<p></p>
+Click the "Rip" button, it will bring us to Figure 14, the Save as Dialog.  Here we name the files to output.  In this case there will be multiple files out so the value here will be used as the prefix for [X], where X is the index of titles selected. For example, I am putting in "Transformers S02D6E" (Figure 14). The 7 files out will be "Transformers S02D6E[1].mp4", "Transformers S02D6E[2].mp4", ..., "Transformers S02D6E[7].mp4".
+<p></p> 
+<div class="figure" id="figure14">Figure 14<img src="images/dvd2mp4-mp4dvd-transformers-saveas.png" /></div>
+<p></p>
+Click the "Save" button to begin the back-up.  This will take a while, see <a href="#movie-why-so-long-div">What is Mp4DVD doing that takes so long?</a> to know why.
+<p></p> 
+<div class="figure" id="figure15">Figure 15<img src="images/dvd2mp4-mp4dvd-transformers-copying1.png" /></div>
+<p></p>
+</blockquote>
+</div>
+<div id="tv-show-one-file-div">
+<h3>TV Series Back-up: One Large File <a href="#toc-div" class="toc-tag">toc^</a></h3>
+<blockquote>
+
+</blockquote>
+</div>
+</body>
+</html>

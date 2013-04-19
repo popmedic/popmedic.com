@@ -1,5 +1,111 @@
 <h3>News:</h3>
 <blockquote>
+    April 11, 2013
+    <blockquote>
+      	<h4>Mp4Dvd</h4>
+        <blockquote>
+            Mp4DVD is now release worthy.  It does it all with static linking of all the libaries, well mp4v2 is 
+            still dlopen'd, I just like doing it that way, it seems cool...
+            <p></p>
+            Going to add DVD copy option that will just mirror the dvd into a directory.  This will make it so that
+            Mp4DVD can do what Mac-The-Ripper used to do.  Oh, but mine will always be free!
+            <p></p>
+            Of course, I added Sparkle update support... would make that mistake twice...
+        </blockquote>
+        <h4>Mp4Split</h4>
+      	<blockquote>
+            Added all the Sparkle support so I can go live with Mp4Split.  I made the mistake of going live without 
+            Sparkle updates once and that is a mistake you only make once ;-)
+			<p></p>
+            Lined up for the future of Mp4Split, these features will impove the ease of backing up show Dvds:
+            <ul>
+                <li>
+                    Chapter/time dialog to add splits for every x chapter/time.
+                </li>
+                <li>
+                    Segment exclusion from segments table.
+                </li>
+                <li>
+                	Clean up the UI...
+                    <ul>
+                    	<li>
+                        	highlight and scroll to last added split.
+                        </li>
+                        <li>
+                        	drag/drop movie onto window.
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </blockquote>
+  </blockquote>
+</blockquote>
+<blockquote>
+    April 5, 2013
+    <blockquote>
+      	<h4>Mp4Dvd</h4>
+        <blockquote>
+            Mp4Dvd is a totally new project.  Using libdvdread this project is a GUI for ripping DVD's into Mp4's.  Just
+            drag the dvd to the window, select the titles you want, and rip the Dvd.  Really simple UI.  Chapter marks are
+            placed in the ripped mp4, so you can split up those show Dvds quickly with mp4split.  This is the first step in 
+            professionally backing up your DVDs.  As usual, all code is available on my GitHub repos.  
+            <p></p>
+            Lined up for the future of Mp4Dvd:
+            <ul>
+                <li>
+                    Statically link all the code so users don't have to install libdvdread and libdvdcss from 
+                    homebrew/port/build.
+                </li>
+            </ul>
+        </blockquote>
+        <h4>Mp4Split</h4>
+      	<blockquote>
+            So cleaned up the UI a bit and added the chapter feature.  Still need to add chapter preservation, not 
+            looking forward to all the math behind it.  Decided against a "Jump to..." feature and instead added a 
+            bunch of &lt;cmd&gt;&lt;Key&gt; controls for scrubbing.  Still takes forever to load MKVs even with the 
+            QT &gt 7.0 asynch QTMovie loading.  Gonna have to keep looking into this.  By adding the -copyts option 
+            to the ffmpeg options has fixed the convertion for most types.
+            <br />
+			<br />
+			Should I make a tool same as mp4split for adding chapter marks to mp4s?  
+            <br />
+			<br />
+  			I am working on Mp4Dvd.  Mp4Dvd is close to finished as I mention above.
+            Once Mp4Dvd is finished, see it puts the chapter markers in so we can make clean splits on them, Mp4Split 
+            will be used to split up episodes if you ripped a show dvd.  All will be clear with the white paper.
+            <p></p>
+            Lined up for the future of Mp4Split, these features will impove the ease of backing up show Dvds:
+            <ul>
+                <li>
+                    Chapter/time dialog to add splits for every x chapter/time.
+                </li>
+                <li>
+                    Segment exclusion from segments table.
+                </li>
+                <li>
+                	Clean up the UI...
+                    <ul>
+                    	<li>
+                        	highlight and scroll to last added split.
+                        </li>
+                        <li>
+                        	drag/drop movie onto window.
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </blockquote>
+        <h4>Mp4Autotag</h4>
+        <blockquote>
+            Nothing new here, although there should be.<br />
+           <p></p>
+            I think I might completely redo this project.  I think I want better data management and project design.  
+            Keep thinking I should remove the proxy server and make the regex filename parsing done in a pretty c++
+            class using posix regexs and threaded search requests.
+      </blockquote>
+  </blockquote>
+</blockquote>
+<blockquote>
     March 13, 2013
     <blockquote>
         <h4>Mp4Split</h4>
