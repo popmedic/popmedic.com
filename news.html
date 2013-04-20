@@ -1,13 +1,56 @@
 <h3>News:</h3>
 <blockquote>
+    April 19, 2013
+    <blockquote>
+    	<h4><a href="backupdvdOSX.html" target="_blank">How to back-up DVD movies and tv series on a Mac OSX &gt; 10.7.0.</a></h4>
+        <blockquote>
+        	Focuses on using <a href="https://github.com/popmedic/mp4dvd#mp4dvd" target="_blank">Mp4DVD</a>, 
+            <a href="https://github.com/popmedic/mp4split#mp4split" target="_blank">Mp4Split</a>, and 
+            <a href="https://github.com/popmedic/mp4autotag#mp4autotag" target="_blank">Mp4Autotag</a> to make 
+            professional back-ups of DVD movies and TV series.  First, we will use Mp4DVD to back-up the content 
+            of media with <b>as-little-as-possible</b> lossy compression. Then, compress and encode the content 
+            to mp4 for playback on <b>as-many-as-possible</b> different players.  Along the way we will use 
+            Mp4Split to pull out the different Chapters for Show Episodes (if we have too), and also use 
+            Mp4Autotag to add the meta-data to the MP4 so it shows up in iTunes just like a episode or movie you 
+            buy though iTunes Store.
+            <p></p>
+            Coming along with this, should be finished within a week, just keep having to squash bugs along the way.
+        </blockquote>
+      	<h4>Mp4Dvd</h4>
+        <blockquote>
+            Mp4DVD is getting stronger and stronger.  The decoding/encoding works perfect and can decode/encode all 
+            the DVDs I throw at it, just UI problems cause exceptions.  Something to do with updating the display 
+            while in the thread that is giving me nightmares.  I just don't understand what was wrong with pthreads 
+            that made it so that Apple wanted to wrap them, pthreads are great, and I will probably just end up using 
+            them. Seems like they react faster too... again it seems good old C is much faster then the object sh1t.
+            <p></p>
+            Still going to add a "mirror DVD" option for Mac-The-Ripper style back-up.  Mainly because the Swiss developer
+            of Mac-The-Ripper wanted a $50.00 donation for a product he did not even support when 64-bit OSX emerged. Really,
+            really lame, all Mac-The-Ripper did was use the same libs I use, really rubbed me the wrong way.
+        </blockquote>
+        <h4>Mp4Split</h4>
+      	<blockquote>
+            Mp4Split should now be complete.  Added the Split Every X Chapters or Seconds.  Not as neat a feature as I thought
+            but it is pretty cool and saved a lot of time when splitting those huge "Classic Cartoon" DVDs.  Some minor UI
+            improvements done as well, and this product has become a great little tool.
+        </blockquote>
+        <h4>Mp4Autotag</h4>
+        <blockquote>
+            Pressed out a new update of Mp4Autotag.  Small UI changes, and fixed that obnoxious "Long Description" bug.
+            <p></p>
+            Going to start working on Mp4Autotag, making the UI a little more user friendly...
+      	</blockquote>
+  	</blockquote>
+</blockquote>
+<blockquote>
     April 11, 2013
     <blockquote>
       	<h4>Mp4Dvd</h4>
         <blockquote>
-            Mp4DVD is now release worthy.  It does it all with static linking of all the libaries, well mp4v2 is 
+            Mp4DVD is now release worthy.  It does it all with static linking of all the libraries, well mp4v2 is 
             still dlopen'd, I just like doing it that way, it seems cool...
-            <p></p>
-            Going to add DVD copy option that will just mirror the dvd into a directory.  This will make it so that
+              <p></p>
+            Going to add DVD copy option that will just mirror the DVD into a directory.  This will make it so that
             Mp4DVD can do what Mac-The-Ripper used to do.  Oh, but mine will always be free!
             <p></p>
             Of course, I added Sparkle update support... would make that mistake twice...
@@ -17,7 +60,7 @@
             Added all the Sparkle support so I can go live with Mp4Split.  I made the mistake of going live without 
             Sparkle updates once and that is a mistake you only make once ;-)
 			<p></p>
-            Lined up for the future of Mp4Split, these features will impove the ease of backing up show Dvds:
+            Lined up for the future of Mp4Split, these features will improve the ease of backing up show DVDs:
             <ul>
                 <li>
                     Chapter/time dialog to add splits for every x chapter/time.
@@ -45,16 +88,16 @@
     <blockquote>
       	<h4>Mp4Dvd</h4>
         <blockquote>
-            Mp4Dvd is a totally new project.  Using libdvdread this project is a GUI for ripping DVD's into Mp4's.  Just
-            drag the dvd to the window, select the titles you want, and rip the Dvd.  Really simple UI.  Chapter marks are
-            placed in the ripped mp4, so you can split up those show Dvds quickly with mp4split.  This is the first step in 
-            professionally backing up your DVDs.  As usual, all code is available on my GitHub repos.  
-            <p></p>
+            Mp4Dvd is a totally new project.  Using libdvdread this project is a GUI for ripping DVDs into Mp4's.  Just
+            drag the DVD to the window, select the titles you want, and rip the DVD.  Really simple UI.  Chapter marks are
+            placed in the ripped mp4, so you can split up those show DVDs quickly with mp4split.  This is the first step in 
+            professionally backing up your DVDs.  As usual, all code is available on my Github repos.  
+              <p></p>
             Lined up for the future of Mp4Dvd:
             <ul>
                 <li>
                     Statically link all the code so users don't have to install libdvdread and libdvdcss from 
-                    homebrew/port/build.
+                    home-brew/port/build.
                 </li>
             </ul>
         </blockquote>
@@ -62,9 +105,9 @@
       	<blockquote>
             So cleaned up the UI a bit and added the chapter feature.  Still need to add chapter preservation, not 
             looking forward to all the math behind it.  Decided against a "Jump to..." feature and instead added a 
-            bunch of &lt;cmd&gt;&lt;Key&gt; controls for scrubbing.  Still takes forever to load MKVs even with the 
+            bunch of &lt;CMD&gt;&lt;Key&gt; controls for scrubbing.  Still takes forever to load MKVs even with the 
             QT &gt 7.0 asynch QTMovie loading.  Gonna have to keep looking into this.  By adding the -copyts option 
-            to the ffmpeg options has fixed the convertion for most types.
+            to the ffmpeg options has fixed the conversion for most types.
             <br />
 			<br />
 			Should I make a tool same as mp4split for adding chapter marks to mp4s?  
@@ -72,9 +115,9 @@
 			<br />
   			I am working on Mp4Dvd.  Mp4Dvd is close to finished as I mention above.
             Once Mp4Dvd is finished, see it puts the chapter markers in so we can make clean splits on them, Mp4Split 
-            will be used to split up episodes if you ripped a show dvd.  All will be clear with the white paper.
+            will be used to split up episodes if you ripped a show DVD.  All will be clear with the white paper.
             <p></p>
-            Lined up for the future of Mp4Split, these features will impove the ease of backing up show Dvds:
+            Lined up for the future of Mp4Split, these features will improve the ease of backing up show DVDs:
             <ul>
                 <li>
                     Chapter/time dialog to add splits for every x chapter/time.

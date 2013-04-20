@@ -30,6 +30,21 @@ a:visited{
 	text-align:right;
 	margin-left:10px;
 }
+.note-div{
+	widows:75%;
+	border:#000 1px solid;
+	border-radius:5px;
+	font-size:14px;
+	padding:8px;
+	margin-left:20px;
+	margin-right:20px;
+	margin-top:30px;
+	margin-bottom:30px;
+}
+.code{
+	font-family:"Courier New", Courier, monospace;
+	font-size:12pt;
+}
 </style>
 </head>
 <body>
@@ -39,6 +54,7 @@ a:visited{
 <div id="objective-div">
 <h2>Objective</h2>
 <blockquote>
+DVD to iTunes and AppleTV with all the info.<br /><br />
 This tutorial is intended to show a basic MAC user how to back-up their movie and TV show DVDs into the most portable Mp4s possible with meta-data.  The end result will be your movies and TV shows in iTunes looking like you bought them from the iTunes store.
 </blockquote>
 </div>
@@ -53,6 +69,7 @@ This tutorial is intended to show a basic MAC user how to back-up their movie an
 <li><a href="#tv-show-back-up-div">TV Series Back-up</a><ul>
 <li><a href="#tv-show-multi-files-div">TV Series Back-up: Multiple Files</a></li>
 <li><a href="#tv-show-one-file-div">TV Series Back-up: One Large File</a></li></ul></li>
+<li><a href="#conclusion-div">Conclusion</a></li>
 </ol>
 </div>
 <div id="intro-div">
@@ -94,8 +111,8 @@ Start up Mp4DVD, and drag and drop the DVD onto it.  I have chosen to back-up th
 <p></p> 
 <div class="figure" id="figure1">Figure 1<img src="images/dvd2mp4-mp4dvd-blank.png" /></div>
 <div class="figure" id="figure2">Figure 2<img src="images/dvd2mp4-mp4dvd-titles.png" /></div>
-What we are looking at in Figure 2 are the different tracks on the DVD.  As one can tell the longest title has automatically been selected for us.  When backing up movies, the longest title is almost always the track you want, as it is in my case with Summer Wars.<p></p>
-Why would we need to adjust this track?  Well if you want the "Extras" on the DVD for example, they are probably one of the smaller tracks.  If you want the extras, I suggest opening the DVD in DVD Player and matching up the lengths with the "Extras" you want.
+What we are looking at in Figure 2 are the different titles on the DVD.  As one can tell the longest title has automatically been selected for us.  When backing up movies, the longest title is almost always the title you want, as it is in my case with Summer Wars.<p></p>
+<div class="note-div">Why would we need to adjust this title?  Well if you want the "Extras" on the DVD for example, they are probably one of the smaller titles.  If you want the extras, I suggest opening the DVD in DVD Player and matching up the lengths with the "Extras" you want.</div>
 <p></p>
 Place a check mark in the box next to all the titles you want to back-up.  When satisfied with the selections, click the "Rip" button.  I selected just the longest title (I just want the movie), and when I clicked "Rip", it brought me to Figure 3.<p></p>
 <div class="figure" id="figure3">Figure 3<img src="images/dvd2mp4-mp4dvd-saveas.png" /></div>
@@ -109,7 +126,7 @@ Now, go work out, get lunch, go to work, do something besides stare at the progr
 <p></p>
 <div class="figure" id="figure5">Figure 5<img src="images/dvd2mp4-mp4dvd-encoding.png" /></div>
 <p></p>
-<div id="movie-why-so-long-div">
+<div id="movie-why-so-long-div" class="note-div">
 <h3>What is Mp4DVD doing that takes so long?<a href="#toc-div" class="toc-tag">toc^</a></h3>
 Mp4DVD is decoding the selected titles off the DVD, that's what "Copying VOB files" means.  Mp4DVD uses the free-ware <a href="http://dvdnav.mplayerhq.hu/" target="_blank">libdvdread and libdvdnav (libdvdcss2)</a> to remove the <a href="http://en.wikipedia.org/wiki/Content_Scramble_System" target="_blank">Content Scramble System (CSS)</a> from the DVD <a href="http://en.wikipedia.org/wiki/VOB" target="_blank">VOB (Video Object) files</a> and copies the files in to a temporary file. Not only does the CSS have to be keyed and decoded, but the files have to be put back together as well.
 <p></p>
@@ -154,7 +171,7 @@ TV Series Back-ups and movie back-ups are not much different.  We start the same
 Start up Mp4DVD, and drag and drop the DVD onto it.  I have chosen to back-up the TV Series "Transformers Season 2 Disc 6".  So, when I put the disc in the DVD drive a DVD icon appears on my desktop labeled "TRANSFORMERS_S2_D6".  I dragged that icon and dropped it on Mp4DVD (<a href="#figure1">figure 1</a>), which will bring me to a title selection table (figure 12).
 <p></p> 
 <div class="figure" id="figure12">Figure 12<img src="images/dvd2mp4-mp4dvd-transformers-titles.png" /></div>
-What we are looking at in Figure 12 are the different tracks on the DVD.  As one can tell the longest title has automatically been selected for us.  We probably want the longest track, but one can tell that the longest track is not the only track of that length.  One is exactly the same length.  The manufactures did something weird here: not only do they have every episode as an individual title; they have duplicates of every title.  This happens sometime.  I look at the lengths of the titles to decide which titles to choose, and sometimes, I just choose them all.  In the case of "Transformers Season 2 Disc 6", I picked one of every title with the same length (Figure 13) and it works.
+What we are looking at in Figure 12 are the different titles on the DVD.  As one can tell the longest title has automatically been selected for us.  We probably want the longest title, but one can tell that the longest title is not the only title of that length.  The manufactures did something weird here: not only do they have every episode as an individual title; they have duplicates of every title.  This happens sometime.  I look at the lengths of the titles to decide which titles to choose, and sometimes, I just choose them all.  In the case of "Transformers Season 2 Disc 6", I picked one of every title with the same length (Figure 13) and it works.
 <p></p> 
 <div class="figure" id="figure13">Figure 13<img src="images/dvd2mp4-mp4dvd-transformers-titles-picked.png" /></div>
 <p></p>
@@ -166,12 +183,170 @@ Click the "Save" button to begin the back-up.  This will take a while, see <a hr
 <p></p> 
 <div class="figure" id="figure15">Figure 15<img src="images/dvd2mp4-mp4dvd-transformers-copying1.png" /></div>
 <p></p>
+Once Mp4DVD is finished with the "Rip" we should have 7 new Mp4 files with the names:
+<ul>
+<li>
+Transformers S02D6E[1].mp4
+</li>
+<li>
+Transformers S02D6E[2].mp4
+</li>
+<li>
+Transformers S02D6E[3].mp4
+</li>
+<li>
+Transformers S02D6E[4].mp4
+</li>
+<li>
+Transformers S02D6E[5].mp4
+</li>
+<li>
+Transformers S02D6E[6].mp4
+</li>
+<li>
+Transformers S02D6E[7].mp4
+</li>
+</ul>
+We could rename them with the appropriate season and episode number (i.e. Transformers S01E36.mp4, Transformers S01E36.mp4, ..., Transformers S01E42.mp4) and use the Automated Autotag feature in Mp4Autotag, but I will demonstrate how to do that in <a href="#tv-show-one-file-div">TV Series Back-up: One Large File</a>.  Instead, I will use the multiple Autotag feature in Mp4Autotag to tag these files.
+<p></p>
+Close Mp4DVD and start up Mp4Autotag (<a href="#figure6">Figure 6</a>).
+<p></p>
+Now click on the "Add" button <img src="images/dvd2mp4-mp4autotag-open-btn.png" /> which will bring you to <a href="#figure7">Figure 7</a>.
+<p></p>
+Browse to the files you created, in my case it is the files listed above in my "~/Movies" folder.  Select all of them and click open (Figure 16).  
+<p></p> 
+<div class="figure" id="figure16">Figure 16<img src="images/dvd2mp4-mp4autotag-transformers-open.png" /></div>
+<p></p>
+This will bring all the files into Mp4Autotag (Figure 17), make sure to select all of them.
+<p></p> 
+<div class="figure" id="figure17">Figure 17<img src="images/dvd2mp4-mp4autotag-transformers-selected.png" /></div>
+<p></p> 
+Now make sure you have selected <b>ALL</b> the files in the table, and click the "Autotag" button <img src="images/dvd2mp4-mp4autotag-autotag-btn.png" />
+<p></p>
+Mp4Autotag will try to fine matches for your files, but since the filename is not in a standard way, Mp4Autotag will not fine a correct match (Figure 18).
+<p></p>  
+<div class="figure" id="figure18">Figure 18<img src="images/dvd2mp4-mp4autotag-transformers-matches1.png" /></div>
+<p></p>
+Bummer, I know, but no worries, click the "Search" button and do a custom search.  Go to the TV Search tab and type in your Series name, Season number, and Episode number.  In my example, it would be Series: Transformers, Season: 2, Episode 36 (Figure 19), incrementing the episode for each file.  
+<p></p> 
+<div class="figure" id="figure19">Figure 19<img src="images/dvd2mp4-mp4autotag-transformers-search.png" /></div>
+<p></p>
+<div class="note-div">
+How did I know the episode number?  I own the DVD and have been importing these DVD so I know what count I am on, also, episode numbers are on the DVDs.  This is not always the case, and using <a href="http://www.thetvdb.com" target="_blank">theTVDB</a> can really help.
+</div>
+<p></p>
+Click the "Search" button and Mp4Autotag will now find the appropriate series, season, and episode for you (Figure 20).
+<p></p>  
+<div class="figure" id="figure20">Figure 20<img src="images/dvd2mp4-mp4autotag-transformers-matches2.png" /></div>
+<p></p>
+Click the "Tag" button and continue this process to add meta-data tags for each of your new episodes.  There is an easier way, as you will see...
+<p></p>
+Now all you have left to do is add these new episodes to iTunes.  Once you do you will see they are added under TV Shows, and organized by Episode under the Series, just like if purchased from iTunes Store (Figure 21).
+<p></p>  
+<div class="figure" id="figure21">Figure 21<img src="images/dvd2mp4-itunes-transformers.png" width="75%" /></div>
+<p></p>
 </blockquote>
 </div>
 <div id="tv-show-one-file-div">
 <h3>TV Series Back-up: One Large File <a href="#toc-div" class="toc-tag">toc^</a></h3>
 <blockquote>
-
+Start up Mp4DVD, and drag and drop the DVD onto it.  I have chosen to back-up the TV Series "Gungrave Disc 2".  So, when I put the disc in the DVD drive a DVD icon appears on my desktop labeled "GUNGRAVE_VOL2".  I dragged that icon and dropped it on Mp4DVD (<a href="#figure1">figure 1</a>), which will bring me to a title selection table (Figure 22).
+<p></p> 
+<div class="figure" id="figure22">Figure 22<img src="images/dvd2mp4-mp4dvd-gungrave-titles.png" /></div>
+<p></p>
+What we are looking at in Figure 22 are the different titles on the DVD.  As one can tell the longest title has automatically been selected for us.  The manufactures seems to have put all the episodes under one title this time, so I want the longest title.  I will just leave it selected. Clicking "Rip" brings me to Figure 23.
+<p></p> 
+<div class="figure" id="figure23">Figure 23<img src="images/dvd2mp4-mp4dvd-gungrave-saveas.png" /></div>
+<p></p>
+Here I choose a location and name for the new Mp4 file.  I have my Mp4 files go to the "~/Movies" directory, and named this file "Gungrave D2".  After the rip the file will be in <span class="code">/Users/&lt;USERNAME&gt;/Movies</span> Folder, with the file name "Gungrave D2.mp4".  Click the "Save" button and relax as Mp4DVD converts the DVD into a Mp4 file.  
+<div class="note-div">
+Here, the manufacture placed all the episodes under one title, so we will only have one Mp4 file output.  To see what to do when there are individual titles for each episode see: <a href="#tv-show-multi-files-div">TV Series Back-up: Multiple Files</a>
+</div> 
+<p></p>
+Remember, I don't want one file, I want a file per episode, and there are 4 episodes on this DVD. I'll use Mp4Split to quickly split up the Mp4 file by chapters. Start up Mp4Split (Figure 24).
+<p></p> 
+<div class="figure" id="figure24" style="padding-top:10px;">Figure 24<img src="images/dvd2mp4-mp4split-blank.png" /></div>
+<p></p>
+Click on the "Open" <img src="images/dvd2mp4-mp4split-openbtn.png" /> tool bar button and open the Mp4 file created by Mp4DVD.  Mine is <span class="code">~/Movies/Gungrave D2.mp4</span>(Figure 25).
+<p></p> 
+<div class="figure" id="figure25" style="padding-top:10px;">Figure 25<img src="images/dvd2mp4-mp4split-open.png" /></div>
+<p></p>
+Using Mp4Split to scrub we have to find all the spots to split the video up into individual episodes.  Almost always this is done by chapters, and lucky for us, Mp4DVD copies the chapters to the Mp4 file.  We can scrub through using the slider, the quick keys, or jump chapters (Figure 26), and place splits where ever the new episodes start.
+<p></p> 
+<div class="figure" id="figure25" style="padding-top:10px;">Figure 25<img src="images/dvd2mp4-mp4split-chapter-menu1.png" /><img src="images/dvd2mp4-mp4split-chapter-menu2.png" /></div>
+<p></p>
+<div class="note-div">
+Mp4Split has a cool feature for helping here.  Remember <a href="#figure22">Figure 22</a>, we had a number of chapters for the title we chose, in my case it was 21.  Since we have 21 chapters, and this DVD should have 4 episodes on it, I use  ((Chapters)-1)/(episodes on disc)=(Chapters per episode). (21-1)/4=20/4=5, so every 5 chapters is a new episode.  If I choose Splits -&gt; Split Every -&gt; Chapters... from the Main Menu, I get Figure 26. 
+<p></p> 
+<div class="figure" id="figure26" style="padding-top:10px;">Figure 26<img src="images/dvd2mp4-mp4split-chapters-split.png" /></div>
+<p></p>
+Here put the number of chapters there are for each episode, in my case 5.  Makes adding scrubbing the video really easy.
+</div>
+<p></p> 
+<div class="figure" id="figure27" style="padding-top:10px;">Figure 27<img src="images/dvd2mp4-mp4split-ready.png" /></div>
+<p></p>
+Once I have all my splits in place (Figure 27), Click the "Split" <img src="images/dvd2mp4-mp4split-splitbtn.png" /> tool bar button. This will bring up Figure 28.  
+<p></p> 
+<div class="figure" id="figure28" style="padding-top:10px;">Figure 28<img src="images/dvd2mp4-mp4split-saveas.png" /></div>
+<p></p>
+The "Output file name prefix" what will go at the beginning of every output file.  "Add to index" is a number to add to the index for the output file.  For example, if we use "Gungrave E" and 4, the 4 files out will be "Gungrave E5.mp4", "Gungrave E6.mp4", "Gungrave E7.mp4", and "Gungrave E9.mp4".  
+<div class="note-div">I am using the "E" after Gungrave because Mp4Autotag looks for the E in the file name to now that next number is the episode number.  If this was a Series that had more then one season then I would use S1E1 for Season 1 Episode 1.
+<p></p>
+The reason we use 4 as an "Add to index" is because this is "Gungrave Disc 2" and "Gungrave Disc 1" had 4 episode on it. So I have to offset by the previous episodes.  "Gungrave Disc 3" will be offset by 8.
+</div>
+<p></p> 
+<div class="figure" id="figure28" style="padding-top:10px;">Figure 28<img src="images/dvd2mp4-mp4split-saveas2.png" /></div>
+<p></p>
+Once I have decided, click the "Ok" button bring up Figure 29.
+<p></p> 
+<div class="figure" id="figure29" style="padding-top:10px;">Figure 29<img src="images/dvd2mp4-mp4split-splitting.png" /></div>
+<p></p>
+The first progress indicator is the current segment getting split, the second progress indicator is all the splits.  Click the "Split" button again to cancel if you want.  The progress indicators will go away when you are done.
+<p></p>
+When done splitting open up Mp4Autotag (<a href="#figure6">Figure 6</a>). 
+<p></p>
+When done I use finder to go to the Folder I output the split Mp4 files into.  Unless someone changed my preferences it will be the same folder as the original Mp4 file. For me this is my <span class="code">~/Movies</span> folder.
+<p></p> 
+<div class="figure" id="figure30" style="padding-top:10px;">Figure 30<img src="images/dvd2mp4-finder-select.png" /></div>
+<p></p>
+I select all the new Mp4Files in Finder, and drag and drop them on Mp4Autotag (<a href="#figure6">Figure 6</a>). This bring up Figure 31.
+<p></p> 
+<div class="figure" id="figure31" style="padding-top:10px;">Figure 31<img src="images/dvd2mp4-mp4autotag-gungrave1.png" /></div>
+<p></p>
+I select all of the episodes in Mp4Autotag (Figure 32) and click the "Automated" 
+<img src="images/dvd2mp4-mp4autotag-automatedbtn.png" /> tool bar button.
+<div class="note-div">
+<img src="images/dvd2mp4-mp4autotag-automatedbtn.png" />Mp4Autotag "Automated" button will go though and tag all the selected files with the "first" result of a search.
+</div>
+<p></p> 
+<div class="figure" id="figure32" style="padding-top:10px;">Figure 32<img src="images/dvd2mp4-mp4autotag-automated-tagging.png" /></div>
+<p></p>
+<div class="note-div">
+Mp4Autotag will use the file names and do a search on-line.  Once it finds the best possible match, it uses the match to attach/modify the meta-data tags of the Mp4 file.  It also attaches the movie poster, or an episode image.  You can specify which in Mp4Autotag's Preferences.  See the <a href="https://github.com/popmedic/mp4autotag#mp4autotag" target="_blank">Mp4Autotag</a> page for more on using Mp4Autotag.
+</div>
+When Mp4Autotag is finished "Automated" autotagging the files, it allows you to verify that the changes where correct, and undo the changes if they where not (Figure 33). 
+<p></p> 
+<div class="figure" id="figure33" style="padding-top:10px;">Figure 33<img src="images/dvd2mp4-mp4autotag-automated-verify.png" /></div>
+<p></p>
+All of the changes are highlighted in orange.  If I don't like the changes, I just click "Undo".  Click "Close" when everything looks good, and check out the data added (Figure 34).
+<p></p> 
+<div class="figure" id="figure34" style="padding-top:10px;">Figure 34<img src="images/dvd2mp4-mp4autotag-gungrave-finished.png" /></div>
+<p></p>
+Add the Mp4 files to iTunes and Check out how cool they look!
+<p></p>  
+<div class="figure" id="figure35">Figure 35<img src="images/dvd2mp4-itunes-gungrave.png" width="75%" /></div>
+<p></p>
+</blockquote>
+</div>
+<div id="conclusion-div">
+<h2>Conclusion <a href="#toc-div" class="toc-tag">toc^</a></h2>
+<blockquote>
+I know it seems like a lot, but it is really just the same process over again for three basic different types of video DVDs.  Use Mp4DVD to convert the DVD to Mp4, and Mp4Autotag to add the meta-data tags.  Sometimes you might need to use Mp4Split to "split the file up into episodes."
+<p></p>
+I hope this tutorial was helpful, and please let me know what you think.  You can email me, or post on the repos in github.  Any feed back can help me.
+<p></p>
+Thanks,<br />
+Popmedic. 
 </blockquote>
 </div>
 </body>
